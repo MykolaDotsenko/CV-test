@@ -1,27 +1,46 @@
 # Developer Profile — Mykola Dotsenko
 
-A modern, responsive developer CV and portfolio landing page built with semantic HTML and CSS.
+A lightweight, responsive developer profile focused on software engineering experience, technical strengths, and selected portfolio work.
 
-This repository started as my first HTML exercise. It has been deliberately modernized without adding a framework that the project does not need. The result is a lightweight personal site that demonstrates clean markup, responsive layout, accessibility, and pragmatic frontend engineering.
+Built with semantic HTML and modern CSS — intentionally without a JavaScript framework.
 
-## What it includes
+## Overview
 
-- responsive single-page CV / portfolio layout
-- semantic HTML5 structure
-- accessible navigation and keyboard focus states
-- mobile-first responsive design
-- reduced-motion support
-- modern CSS using custom properties, Grid, Flexbox, and fluid typography
-- selected professional experience
+This project presents:
+
+- professional software engineering experience
+- backend and data-focused positioning
 - selected portfolio projects
-- direct LinkedIn and GitHub contact paths
-- no JavaScript and no runtime dependencies
+- core technical skills
+- direct GitHub and LinkedIn links
+- a responsive, accessible single-page layout
 
-## Why no framework?
+## Engineering approach
 
-The page is intentionally static.
+The site is intentionally static.
 
-React, Next.js, or another framework would increase complexity without improving the product. For a personal CV page, HTML and CSS provide the smallest dependency surface, fastest load path, easiest maintenance, and best long-term portability.
+For this type of product, adding React, Next.js, or another runtime framework would increase complexity without providing meaningful value. A dependency-free HTML/CSS implementation gives the project:
+
+- minimal runtime and dependency surface
+- fast loading
+- simple deployment
+- low maintenance cost
+- long-term portability
+- clear separation between content and presentation
+
+## Technical highlights
+
+- semantic HTML5 structure
+- CSS Grid and Flexbox
+- fluid typography with `clamp()`
+- reusable design tokens with CSS custom properties
+- responsive layouts for desktop, tablet, and mobile
+- visible keyboard focus states
+- skip-to-content navigation
+- `prefers-reduced-motion` support
+- no JavaScript runtime
+- no build step
+- no third-party dependencies
 
 ## Project structure
 
@@ -35,11 +54,9 @@ React, Next.js, or another framework would increase complexity without improving
 
 ## Run locally
 
-No build step is required.
+No installation is required.
 
-Open `index.html` directly in a browser, or serve the directory with any static web server.
-
-For example:
+Open `index.html` directly, or serve the directory with any static HTTP server:
 
 ```bash
 python -m http.server 8000
@@ -51,18 +68,7 @@ Then open:
 http://localhost:8000
 ```
 
-## Accessibility decisions
-
-- semantic landmarks and headings
-- skip-to-content link
-- visible keyboard focus
-- meaningful link text
-- no inaccessible fake form controls
-- responsive layout without horizontal scrolling
-- `prefers-reduced-motion` support
-- descriptive image alt text
-
-## Selected projects
+## Selected work featured on the site
 
 - [Pizzeria — React + TypeScript](https://github.com/MykolaDotsenko/Pizzeria-React-Typescript-Project)
 - [MovieShelf — Django](https://github.com/MykolaDotsenko/DjangoMovieProject)
