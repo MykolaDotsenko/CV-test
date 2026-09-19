@@ -40,6 +40,7 @@ For this type of product, adding React, Next.js, or another runtime framework wo
 - skip-to-content navigation
 - `prefers-reduced-motion` support
 - Open Graph and social metadata
+- lightweight SVG favicon
 - automated HTML and local-link validation
 - no JavaScript runtime
 - no application dependencies
@@ -54,6 +55,7 @@ For this type of product, adding React, Next.js, or another runtime framework wo
 ├── scripts/
 │   └── check_local_links.py
 ├── avatar.jpg
+├── favicon.svg
 ├── index.html
 ├── styles.css
 └── README.md
@@ -83,7 +85,7 @@ Pull requests and pushes to `main` run a small GitHub Actions workflow that chec
 2. internal anchors and local file references with `scripts/check_local_links.py`
 3. Python syntax for the validation helper
 
-The checks are deliberately narrow: they protect the static site without introducing a full frontend toolchain.
+The checks are deliberately narrow: they protect the static site without introducing a full frontend toolchain. The workflow uses current major versions of the official GitHub checkout and Node setup actions.
 
 ## Selected work featured on the site
 
