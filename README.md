@@ -6,7 +6,7 @@ Built with semantic HTML and modern CSS — intentionally without a JavaScript f
 
 ## Overview
 
-This project presents:
+The site presents:
 
 - professional software engineering experience
 - backend and data-focused positioning
@@ -17,7 +17,7 @@ This project presents:
 
 ## Engineering approach
 
-The site is intentionally static.
+The implementation stays intentionally small.
 
 For this type of product, adding React, Next.js, or another runtime framework would increase complexity without providing meaningful value. A dependency-free HTML/CSS implementation gives the project:
 
@@ -34,18 +34,25 @@ For this type of product, adding React, Next.js, or another runtime framework wo
 - CSS Grid and Flexbox
 - fluid typography with `clamp()`
 - reusable design tokens with CSS custom properties
-- responsive layouts for desktop, tablet, and mobile
+- responsive desktop, tablet, and mobile layouts
+- horizontally scrollable mobile navigation without JavaScript
 - visible keyboard focus states
 - skip-to-content navigation
 - `prefers-reduced-motion` support
+- Open Graph and social metadata
+- automated HTML, formatting, and local-link validation
 - no JavaScript runtime
-- no build step
-- no third-party dependencies
+- no application dependencies
 
 ## Project structure
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── quality.yml
+├── scripts/
+│   └── check_local_links.py
 ├── avatar.jpg
 ├── index.html
 ├── styles.css
@@ -67,6 +74,16 @@ Then open:
 ```text
 http://localhost:8000
 ```
+
+## Quality checks
+
+Pull requests and pushes to `main` run a small GitHub Actions workflow that checks:
+
+1. HTML validity with `html-validate`
+2. formatting with Prettier
+3. internal anchors and local file references with `scripts/check_local_links.py`
+
+The checks are deliberately narrow: they protect the static site without introducing a full frontend toolchain.
 
 ## Selected work featured on the site
 
