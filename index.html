@@ -66,10 +66,12 @@
           <div class="hero-copy">
             <p class="eyebrow">Software Engineer · Turku, Finland</p>
 
-            <h1>
+            <h1>Mykola Dotsenko</h1>
+
+            <p class="hero-statement">
               Backend-first engineering for reliable products
               <span class="accent-text">and data flows.</span>
-            </h1>
+            </p>
 
             <p class="lede">
               I build production web applications with a focus on Python/Django,
@@ -95,21 +97,6 @@
                 GitHub ↗
               </a>
             </div>
-
-            <ul class="quick-facts">
-              <li>
-                <strong>2+ years</strong>
-                <span>production software development</span>
-              </li>
-              <li>
-                <strong>Backend &amp; data</strong>
-                <span>integrations, validation, reliability</span>
-              </li>
-              <li>
-                <strong>Full-stack</strong>
-                <span>Python, Django, React, Next.js, TypeScript</span>
-              </li>
-            </ul>
           </div>
 
           <aside class="profile-card" aria-label="Profile summary">
@@ -120,23 +107,25 @@
               width="360"
               height="360">
 
-            <div>
-              <p class="profile-label">Current focus</p>
-              <h2>Software Engineer</h2>
-              <p>
-                Backend systems, data consistency, CRM and API integrations,
-                production reliability, and maintainable web architecture.
-              </p>
+            <div class="profile-intro">
+              <p class="profile-label">Engineering focus</p>
+              <p class="profile-title">Backend &amp; data systems</p>
             </div>
 
-            <div class="tag-list" role="group" aria-label="Core technologies">
-              <span>Python</span>
-              <span>Django</span>
-              <span>PostgreSQL</span>
-              <span>TypeScript</span>
-              <span>React</span>
-              <span>Next.js</span>
-            </div>
+            <dl class="profile-facts">
+              <div>
+                <dt>Core stack</dt>
+                <dd>Python · Django · PostgreSQL</dd>
+              </div>
+              <div>
+                <dt>Strengths</dt>
+                <dd>Integrations · validation · reliability</dd>
+              </div>
+              <div>
+                <dt>Delivery</dt>
+                <dd>Pragmatic full-stack ownership when the product needs it</dd>
+              </div>
+            </dl>
           </aside>
         </div>
       </section>
@@ -181,25 +170,21 @@
             <div>
               <h3>Software Developer · Techco / Bo</h3>
               <p class="timeline-summary">
-                Production development across backend, data integrations, web features,
-                and reliability-focused improvements.
+                Own production delivery across backend systems, data integrations, APIs,
+                databases, and the frontend surfaces that connect them.
               </p>
               <ul class="bullet-list">
                 <li>
-                  Build and maintain search, filtering, listing, and detail flows in
-                  production web applications.
+                  Own production features across search, filtering, listing, and detail
+                  workflows, from backend behavior through user-facing delivery.
                 </li>
                 <li>
-                  Develop data-heavy integrations and validation workflows where
-                  correctness and reconciliation matter.
+                  Design integration and reconciliation flows with explicit validation,
+                  ambiguity handling, and idempotent processing.
                 </li>
                 <li>
-                  Improve maintainability through tests, type safety, static analysis,
-                  and clearer boundaries between application concerns.
-                </li>
-                <li>
-                  Work across Python/Django, APIs, databases, and modern frontend tooling
-                  when a feature spans the full stack.
+                  Reduce maintenance and release risk with tests, type and static checks,
+                  and clearer boundaries between domain, data, and interface concerns.
                 </li>
               </ul>
             </div>
@@ -241,43 +226,63 @@
           </div>
 
           <div class="project-grid">
-            <article class="project-card">
-              <div class="project-card-topline">
-                <span class="project-type">React · TypeScript</span>
-                <span aria-hidden="true">01</span>
+            <article class="project-card project-card-featured">
+              <div class="featured-project-copy">
+                <div class="project-card-topline">
+                  <span class="project-type">Featured · React · TypeScript</span>
+                  <span aria-hidden="true">01</span>
+                </div>
+                <h3>Pizzeria</h3>
+                <p>
+                  Production-minded CRUD application built around explicit runtime
+                  boundaries, durable client-side persistence, accessible forms,
+                  automated tests, and CI.
+                </p>
+                <div class="tag-list">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Zod</span>
+                  <span>Vitest</span>
+                  <span>CI</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://pizza-react-typescript.vercel.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live demo ↗
+                  </a>
+                  <a
+                    href="https://github.com/MykolaDotsenko/Pizzeria-React-Typescript-Project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source ↗
+                  </a>
+                </div>
               </div>
-              <h3>Pizzeria</h3>
-              <p>
-                Production-minded CRUD application with runtime validation, versioned
-                persistence, legacy-data migration, accessible forms, automated tests,
-                and CI.
-              </p>
-              <div class="tag-list">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Zod</span>
-                <span>Vitest</span>
-                <span>CI</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://pizza-react-typescript.vercel.app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live demo ↗
-                </a>
-                <a
-                  href="https://github.com/MykolaDotsenko/Pizzeria-React-Typescript-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source ↗
-                </a>
-              </div>
+
+              <aside class="project-proof" aria-label="Pizzeria engineering proof">
+                <p class="proof-kicker">Engineering proof</p>
+                <dl>
+                  <div>
+                    <dt>Runtime safety</dt>
+                    <dd>Zod validation protects form and persisted data boundaries.</dd>
+                  </div>
+                  <div>
+                    <dt>Persistence</dt>
+                    <dd>Versioned repository with migration and deduplication paths.</dd>
+                  </div>
+                  <div>
+                    <dt>Quality</dt>
+                    <dd>Vitest, Testing Library, and GitHub Actions guard regressions.</dd>
+                  </div>
+                </dl>
+              </aside>
             </article>
 
-            <article class="project-card">
+            <article class="project-card project-card-compact">
               <div class="project-card-topline">
                 <span class="project-type">Python · Django</span>
                 <span aria-hidden="true">02</span>
@@ -305,7 +310,7 @@
               </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card project-card-compact">
               <div class="project-card-topline">
                 <span class="project-type">Next.js · Full-stack</span>
                 <span aria-hidden="true">03</span>
@@ -334,7 +339,7 @@
               </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card project-card-compact">
               <div class="project-card-topline">
                 <span class="project-type">ASP.NET · API</span>
                 <span aria-hidden="true">04</span>
