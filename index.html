@@ -80,13 +80,14 @@
 
             <div class="hero-actions" role="group" aria-label="Primary actions">
               <a class="button" href="#projects">View selected work</a>
+              <a class="button button-secondary" href="resume.html">Resume</a>
               <a
-                class="button button-secondary"
+                class="text-link"
                 href="https://www.linkedin.com/in/mykola-dotsenko/"
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn
+                LinkedIn ↗
               </a>
               <a
                 class="text-link"
@@ -173,18 +174,18 @@
                 Own production delivery across backend systems, data integrations, APIs,
                 databases, and the frontend surfaces that connect them.
               </p>
-              <ul class="bullet-list">
+              <ul class="bullet-list impact-list">
                 <li>
-                  Own production features across search, filtering, listing, and detail
-                  workflows, from backend behavior through user-facing delivery.
+                  Reconciled data across <strong>~200k CRM and contact records</strong>
+                  using explicit validation, ambiguity handling, and idempotent processing.
                 </li>
                 <li>
-                  Design integration and reconciliation flows with explicit validation,
-                  ambiguity handling, and idempotent processing.
+                  Reduced a key search flow from <strong>3.5s to ~300ms</strong> through
+                  backend and query-path optimization.
                 </li>
                 <li>
-                  Reduce maintenance and release risk with tests, type and static checks,
-                  and clearer boundaries between domain, data, and interface concerns.
+                  Resolved <strong>~1,600 duplicate assignment records</strong> while
+                  strengthening data-integrity safeguards and repeatable ingestion flows.
                 </li>
               </ul>
             </div>
@@ -238,6 +239,14 @@
                   boundaries, durable client-side persistence, accessible forms,
                   automated tests, and CI.
                 </p>
+
+                <figure class="project-visual">
+                  <img
+                    src="pizzeria-preview.jpg"
+                    alt="Pizza image used in the Pizzeria project interface">
+                  <figcaption>Real visual asset from the live Pizzeria project.</figcaption>
+                </figure>
+
                 <div class="tag-list">
                   <span>React</span>
                   <span>TypeScript</span>
@@ -437,7 +446,10 @@
     <footer class="site-footer">
       <div class="container footer-shell">
         <p>© 2026 Mykola Dotsenko</p>
-        <p>Built with semantic HTML and modern CSS. No framework required.</p>
+        <p>
+          <a class="footer-link" href="resume.html">Resume</a>
+          · Built with semantic HTML and modern CSS. No framework required.
+        </p>
       </div>
     </footer>
   </body>
