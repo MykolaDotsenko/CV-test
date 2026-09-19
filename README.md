@@ -2,7 +2,7 @@
 
 **Software Engineer focused on Python/Django, backend systems, data integrations, and reliable web products.**
 
-[Live site](https://mykoladotsenko.github.io/CV-test/) · [GitHub profile](https://github.com/MykolaDotsenko) · [LinkedIn](https://www.linkedin.com/in/mykola-dotsenko/)
+[Live site](https://mykoladotsenko.github.io/developer-profile/) · [GitHub profile](https://github.com/MykolaDotsenko) · [LinkedIn](https://www.linkedin.com/in/mykola-dotsenko/)
 
 ![Mykola Dotsenko — Software Engineer](social-preview.png)
 
