@@ -22,7 +22,7 @@ jobs:
           node-version: 24
 
       - name: Validate HTML
-        run: npx --yes html-validate@9 index.html
+        run: npx --yes html-validate@9 index.html resume.html
 
       - name: Validate local links
         run: python scripts/check_local_links.py
