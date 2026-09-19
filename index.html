@@ -1,86 +1,403 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Mykola CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mykola Dotsenko — Software Engineer focused on Python/Django, backend systems, data integrations, and modern web products."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Mykola Dotsenko — Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td><img src="avatar.jpg" width="200" alt="My photo" /></td>
-        <td>
-          <h1>Mykola Dotsenko</h1>
-          <p>
-            <em>I am studying <strong> web development</strong></em>
-          </p>
-          <p>I like traveling, doing sport and coding</p>
-        </td>
-      </tr>
-    </table>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <hr />
-    <hr />
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" aria-label="Mykola Dotsenko home">MD</a>
 
-    <h2>My social pages</h2>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/mykola-dotsenko/" target="_blank"
-          >Linkedin</a
-        >
-      </li>
-      <li>
-        <a href="https://www.instagram.com/nikolai_dnd/" target="_blank"
-          >Instagram</a
-        >
-      </li>
-    </ul>
-    <hr />
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Photography</li>
-      <li>Coding</li>
-      <li>Gym</li>
-      <li>Traveling</li>
-    </ol>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a class="button button-small" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>Experience</h2>
-    <table border="2">
-      <tr>
-        <th>Company</th>
-        <th>Position</th>
-        <th>Period</th>
-      </tr>
-      <tr>
-        <td>Sauvon Sailike</td>
-        <td>Truki driver</td>
-        <td>2022-2023</td>
-      </tr>
-      <tr>
-        <td>Huiskula</td>
-        <td>Gardener</td>
-        <td>2021-2022</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>My resources for studying</h2>
-    <a href="cources.html">Open list</a>
-    <hr />
-    <h2>Contact me</h2>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Software Engineer · Turku, Finland</p>
+            <h1>Backend-first engineering for reliable products and data flows.</h1>
+            <p class="lede">
+              I build production web applications with a focus on Python/Django,
+              data-heavy integrations, validation, maintainability, and pragmatic delivery.
+            </p>
 
-    <form action="/">
-      <label for="name">Your name</label>
-      <input type="text" id="name" placeholder="Enter your name..." />
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button" href="#projects">View selected work</a>
+              <a
+                class="button button-secondary"
+                href="https://www.linkedin.com/in/mykola-dotsenko/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                class="text-link"
+                href="https://github.com/MykolaDotsenko"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
 
-      <br />
-      <label for="name">Your email</label>
-      <input type="text" id="name" placeholder="Enter your email..." />
-      <br />
+            <ul class="quick-facts" aria-label="Professional highlights">
+              <li>
+                <strong>2+ years</strong>
+                <span>production software development</span>
+              </li>
+              <li>
+                <strong>Backend & data</strong>
+                <span>integrations, validation, reliability</span>
+              </li>
+              <li>
+                <strong>Full-stack</strong>
+                <span>Python, Django, React, Next.js, TypeScript</span>
+              </li>
+            </ul>
+          </div>
 
-      <label for="text">Your message</label>
-      <br />
-      <textarea name="text" id="" cols="30" rows="10"></textarea>
-      <br />
-      <input type="submit" value="Apply" />
-    </form>
+          <aside class="profile-card" aria-label="Profile summary">
+            <img
+              class="avatar"
+              src="avatar.jpg"
+              alt="Portrait of Mykola Dotsenko"
+              width="360"
+              height="360"
+            />
+
+            <div>
+              <p class="profile-label">Current focus</p>
+              <h2>Software Engineer</h2>
+              <p>
+                Backend systems, data consistency, CRM and API integrations,
+                production reliability, and maintainable web architecture.
+              </p>
+            </div>
+
+            <div class="tag-list" aria-label="Core technologies">
+              <span>Python</span>
+              <span>Django</span>
+              <span>PostgreSQL</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section-grid">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2>I care about systems that stay understandable after they grow.</h2>
+          </div>
+
+          <div class="prose">
+            <p>
+              My strongest area is backend and data-oriented product development:
+              designing clear domain logic, validating untrusted input, integrating
+              external systems, and keeping data consistent across workflows.
+            </p>
+            <p>
+              I also work comfortably across the frontend when the product needs it.
+              I prefer simple architecture, explicit trade-offs, automated checks,
+              and solutions that reduce future maintenance instead of adding ceremony.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Experience</p>
+              <h2>Selected professional experience</h2>
+            </div>
+          </div>
+
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <p class="timeline-date">May 2025 — Present</p>
+              <p>Finland</p>
+            </div>
+
+            <div>
+              <h3>Software Developer · Techco / Bo</h3>
+              <p class="timeline-summary">
+                Production development across backend, data integrations, web features,
+                and reliability-focused improvements.
+              </p>
+              <ul class="bullet-list">
+                <li>
+                  Build and maintain search, filtering, listing, and detail flows in
+                  production web applications.
+                </li>
+                <li>
+                  Develop data-heavy integrations and validation workflows where
+                  correctness and reconciliation matter.
+                </li>
+                <li>
+                  Improve maintainability through tests, type safety, static analysis,
+                  and clearer boundaries between application concerns.
+                </li>
+                <li>
+                  Work across Python/Django, APIs, databases, and modern frontend tooling
+                  when a feature spans the full stack.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-card timeline-card-secondary">
+            <div class="timeline-meta">
+              <p class="timeline-date">Before software</p>
+              <p>Business & operations</p>
+            </div>
+
+            <div>
+              <h3>Agriculture, sales, accounting, and production</h3>
+              <p class="timeline-summary">
+                A multidisciplinary background that shaped a practical approach to
+                ownership, process improvement, and translating business needs into
+                reliable technical solutions.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Selected work</p>
+              <h2>Projects that show how I engineer.</h2>
+            </div>
+            <a
+              class="text-link"
+              href="https://github.com/MykolaDotsenko"
+              target="_blank"
+              rel="noreferrer"
+            >
+              All repositories ↗
+            </a>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card-topline">
+                <span class="project-type">React · TypeScript</span>
+                <span aria-hidden="true">01</span>
+              </div>
+              <h3>Pizzeria</h3>
+              <p>
+                Production-minded CRUD application with runtime validation, versioned
+                persistence, legacy-data migration, accessible forms, automated tests,
+                and CI.
+              </p>
+              <div class="tag-list">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Zod</span>
+                <span>Vitest</span>
+                <span>CI</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://pizza-react-typescript.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live demo ↗
+                </a>
+                <a
+                  href="https://github.com/MykolaDotsenko/Pizzeria-React-Typescript-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-topline">
+                <span class="project-type">Python · Django</span>
+                <span aria-hidden="true">02</span>
+              </div>
+              <h3>MovieShelf</h3>
+              <p>
+                Django movie catalog with relational modeling, authentication, search,
+                media handling, automated tests, Ruff checks, and GitHub Actions CI.
+              </p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Django</span>
+                <span>SQLite</span>
+                <span>Ruff</span>
+                <span>CI</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/MykolaDotsenko/DjangoMovieProject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-topline">
+                <span class="project-type">Next.js · Full-stack</span>
+                <span aria-hidden="true">03</span>
+              </div>
+              <h3>JunaLippu</h3>
+              <p>
+                Railway-booking application with server-side validation, Prisma,
+                tRPC, authentication, seat selection, and database-level duplicate
+                booking protection.
+              </p>
+              <div class="tag-list">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Prisma</span>
+                <span>tRPC</span>
+                <span>Zod</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/MykolaDotsenko/JunaLippu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-topline">
+                <span class="project-type">ASP.NET · API</span>
+                <span aria-hidden="true">04</span>
+              </div>
+              <h3>MoviesAPI</h3>
+              <p>
+                REST API built with ASP.NET and Entity Framework, including
+                authentication, relational data, geospatial capabilities, cloud
+                storage integration, and Swagger documentation.
+              </p>
+              <div class="tag-list">
+                <span>C#</span>
+                <span>ASP.NET</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+                <span>Azure</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/MykolaDotsenko/MoviesAPI"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source ↗
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Skills</p>
+              <h2>Tools I use to ship maintainable software.</h2>
+            </div>
+          </div>
+
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <p>Python, Django, Django REST Framework, C#, ASP.NET Core, REST APIs</p>
+            </article>
+            <article class="skill-card">
+              <h3>Data</h3>
+              <p>PostgreSQL, SQL, ORM design, data validation, reconciliation, ETL-style flows</p>
+            </article>
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <p>React, Next.js, TypeScript, JavaScript, semantic HTML, responsive CSS</p>
+            </article>
+            <article class="skill-card">
+              <h3>Delivery</h3>
+              <p>Git, GitHub Actions, Docker, testing, static analysis, cloud deployments</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-card">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>Interested in working together?</h2>
+            <p>
+              The best way to reach me is through LinkedIn. You can also explore the
+              source code behind my projects on GitHub.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a
+              class="button"
+              href="https://www.linkedin.com/in/mykola-dotsenko/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/MykolaDotsenko"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>© 2026 Mykola Dotsenko</p>
+        <p>Built with semantic HTML and modern CSS. No framework required.</p>
+      </div>
+    </footer>
   </body>
 </html>
