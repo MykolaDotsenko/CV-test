@@ -13,7 +13,9 @@ Built with semantic HTML and modern CSS — intentionally without a JavaScript f
 ## What this project demonstrates
 
 - backend- and data-focused software engineering positioning
-- selected production-minded portfolio projects
+- selected production-minded portfolio projects with recruiter-facing engineering evidence
+- quantified, public-safe professional impact highlights
+- a dedicated printable HTML resume
 - semantic, accessible HTML5
 - responsive CSS architecture without runtime JavaScript
 - lightweight automated quality checks
@@ -60,8 +62,11 @@ For this type of product, adding React, Next.js, or another runtime framework wo
 │   └── check_local_links.py
 ├── avatar.jpg
 ├── favicon.svg
+├── pizzeria-preview.jpg
 ├── social-preview.png
 ├── index.html
+├── resume.html
+├── resume.css
 ├── styles.css
 └── README.md
 ```
