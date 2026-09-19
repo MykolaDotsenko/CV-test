@@ -1,19 +1,23 @@
 # Developer Profile — Mykola Dotsenko
 
+**Software Engineer focused on Python/Django, backend systems, data integrations, and reliable web products.**
+
+[Live site](https://mykoladotsenko.github.io/CV-test/) · [GitHub profile](https://github.com/MykolaDotsenko) · [LinkedIn](https://www.linkedin.com/in/mykola-dotsenko/)
+
+![Mykola Dotsenko — Software Engineer](social-preview.png)
+
 A lightweight, responsive developer profile focused on software engineering experience, technical strengths, and selected portfolio work.
 
 Built with semantic HTML and modern CSS — intentionally without a JavaScript framework.
 
-## Overview
+## What this project demonstrates
 
-The site presents:
-
-- professional software engineering experience
-- backend and data-focused positioning
-- selected portfolio projects
-- core technical skills
-- direct GitHub and LinkedIn links
-- a responsive, accessible single-page layout
+- backend- and data-focused software engineering positioning
+- selected production-minded portfolio projects
+- semantic, accessible HTML5
+- responsive CSS architecture without runtime JavaScript
+- lightweight automated quality checks
+- deliberate avoidance of unnecessary framework complexity
 
 ## Engineering approach
 
@@ -56,6 +60,7 @@ For this type of product, adding React, Next.js, or another runtime framework wo
 │   └── check_local_links.py
 ├── avatar.jpg
 ├── favicon.svg
+├── social-preview.png
 ├── index.html
 ├── styles.css
 └── README.md
