@@ -1,4 +1,4 @@
-"""Validate internal anchors and local file references in index.html."""
+"""Validate internal anchors and local file references across static HTML pages."""
 
 from __future__ import annotations
 
@@ -8,11 +8,11 @@ from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HTML_PATH = ROOT / "index.html"
+HTML_PATHS = sorted(ROOT.glob("*.html"))
 
 
 class ReferenceParser(HTMLParser):
-    """Collect element IDs and local href/src references from HTML."""
+    """Collect element IDs and local href/src references from one HTML page."""
 
     def __init__(self) -> None:
         super().__init__()
@@ -43,9 +43,11 @@ def is_external(reference: str) -> bool:
     return bool(parsed.scheme or parsed.netloc)
 
 
-def main() -> int:
+def validate_html(html_path: Path) -> list[str]:
+    """Return validation errors for local anchors and file references."""
+
     parser = ReferenceParser()
-    parser.feed(HTML_PATH.read_text(encoding="utf-8"))
+    parser.feed(html_path.read_text(encoding="utf-8"))
 
     errors: list[str] = []
 
@@ -53,15 +55,31 @@ def main() -> int:
         if reference.startswith("#"):
             target = reference.removeprefix("#")
             if target and target not in parser.ids:
-                errors.append(f"Missing anchor target: {reference}")
+                errors.append(
+                    f"{html_path.name}: missing anchor target {reference}"
+                )
             continue
 
         if is_external(reference):
             continue
 
-        local_path = (ROOT / reference.split("#", 1)[0]).resolve()
+        local_reference = reference.split("#", 1)[0]
+        local_path = (html_path.parent / local_reference).resolve()
+
         if not local_path.exists():
-            errors.append(f"Missing local file: {reference}")
+            errors.append(
+                f"{html_path.name}: missing local file {reference}"
+            )
+
+    return errors
+
+
+def main() -> int:
+    errors = [
+        error
+        for html_path in HTML_PATHS
+        for error in validate_html(html_path)
+    ]
 
     if errors:
         print("Local link validation failed:")
@@ -69,7 +87,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("Local links and anchors are valid.")
+    print(f"Local links and anchors are valid across {len(HTML_PATHS)} HTML pages.")
     return 0
 
 
